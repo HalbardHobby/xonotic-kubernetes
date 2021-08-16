@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xonotic-deployment
+  labels:
+    app: xonotic-server
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: xonotic-server
+  template:
+    metadata:
+      labels:
+        app: xonotic-server
+    spec:
+      containers:
+      - name: xonotic-server
+        image: halbard/xonotic-server:0.8.2
+        ports:
+        - containerPort: 26000
+
