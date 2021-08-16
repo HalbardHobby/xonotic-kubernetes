@@ -35,4 +35,3 @@ RUN cp server/server.cfg ~/.xonotic/data/server.cfg
 EXPOSE 26000
 
 CMD ./all run dedicated
-
