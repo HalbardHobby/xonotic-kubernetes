@@ -29,6 +29,9 @@ RUN ./all compile -r dedicated
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN mkdir -p ~/.xonotic/data/
+RUN cp server/server.cfg ~/.xonotic/data/server.cfg
+
 EXPOSE 26000
 
 CMD ./all run dedicated
