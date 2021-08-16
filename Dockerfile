@@ -31,5 +31,5 @@ RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 EXPOSE 26000
 
-CMD ["./all run dedicated"]
+CMD ./all run dedicated
 
