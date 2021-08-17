@@ -16,7 +16,6 @@ spec:
     spec:
       containers:
       - name: xonotic-server
-        image: halbard/xonotic-server:0.8.2
+        image: halbard/xonotic-server:stable
         ports:
         - containerPort: 26000
-
